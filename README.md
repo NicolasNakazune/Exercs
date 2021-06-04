@@ -1,4 +1,4 @@
-# Teste de criação - Commit :smile:
+# Exercises register ._.
 
-- pastaTeste
+- HTML5 e CSS3
 - [ END ]
