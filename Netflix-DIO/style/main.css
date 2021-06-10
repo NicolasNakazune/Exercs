@@ -1,0 +1,133 @@
+/* Criando variáveis */
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+/* Zerando algumas propriedades para padronizar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Configurações da página */
+body{
+    /* Cor de fundo, selecionando a variável criada anteriormente */
+    background: var(--preta);
+    /* "Times New Roma", entre aspas a fonte princical seguida da secundária */
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* Propriedades dos elementos dentro do "container" */
+header .container {
+    /* Alinhar horizontalmente os elementos em tela */
+    display: flex; 
+    /* O padrão é "row" */
+    flex-direction: row; 
+    /* Alinha os itens VERTICALMENTE */
+    align-items: center; 
+    /* cria um espaço entre o h2" e "nav" */
+    justify-content: space-between; 
+}
+
+/* Aparência da logo NETFLIX */
+header .logo{
+    /* Desgrudar da parede da página */
+    margin-left: 4px; 
+    /* Definindo a nova cor da logo */
+    color: var(--vermelho);
+    /* "Arial Black", entre aspas a fonte princical seguida da secundária */
+    font-family: "Arial Black", Times;
+    /* Difinindo um novo tamanho para a logo */
+    font-size: 40px;
+}
+
+/* Mudando a aparencia das navegações */
+header nav a{
+    /* Retirando a estilização padrão */
+    text-decoration: none; 
+    /* Definindo uma nova cor */
+    color: #aaa;
+    /* Colocando um espaçamento entre os links */
+    margin-right: 10px;
+}
+/* Sobreposição do mouse */
+header nav a:hover{
+    color: #fff;
+}
+
+/* FILME EM DESTAQUE */
+.filme-destaque{
+    /*                    BACKGROUNG                    */
+    /* "linear-gradient()" faz com q ocorra um degrade no background */
+    /* "rgba()" Red Green Blue Alpha */
+    /* "url()" busca onde a imagem fica */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)50%), url('../img/destaque.png');
+    /* Tamanho da caixa */
+    height: 400px;
+    /* Especificar o tamanho da imagem, nesse caso ficar do tamanho da caixa */
+    background-size: cover;
+
+    /*                    LETRAS                    */
+    /* Tamanho da escrita dentro da caixa "filme-destaque" */
+    font-size: 16px;
+
+    /*                    BOTÕES                    */
+    /* Organiza os elementos na horizontal */
+    display: flex;
+    /* A organização é em coluna */
+    flex-direction: column;
+    /* Localização, nesse caso verticalmente */
+    justify-content: center;
+    /* Localização, horizontalmente */
+    align-items: flex-start;
+}
+
+/* colocando um espaçamento entre a descrição e os botões */
+.filme-destaque .descricao{
+    margin-bottom: 7%;
+    margin-top: 2%;
+}
+
+/* Alterando o tamanho do título do filme */
+.filme-destaque .titulo{
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* Configurando a aparência dos botões */
+.filme-destaque .botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin: 15px;
+    font-size: 12px;
+    /* mudar o cursor do mouse */
+    cursor: pointer;
+    /* transição para quando sobrepor o mouse nos botões */
+    transition: .3s ease all;
+}
+
+/* Sobreposição do mouse, nos botões */
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Configurando a img dos botões */
+.botoes i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.filme-destaque .container{
+    width: 70%;
+}
