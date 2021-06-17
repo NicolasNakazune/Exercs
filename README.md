@@ -5,5 +5,6 @@
 - Introdução-javaScript
 - Netflix-DIO
 - Aula-Bootstrap
+- Recriando o jogo da cobrinha com javaScript
 - [ END ]
 
